@@ -1,4 +1,4 @@
-# RateForge V2.0 - Project Statement
+# RateForge - Project Statement
 
 ## 1. Problem Statement
 

@@ -1,4 +1,4 @@
-# RateForge V2.0
+# RateForge 
 **Rate Limiting Experimentation & Analysis Tool**
 RateForge is a Java command-line project for implementing, simulating, and comparing common rate-limiting algorithms.
 The program generates simulated traffic and shows how different algorithms handle different traffic conditions.
@@ -31,7 +31,7 @@ Tokens are added to a bucket at a fixed rate. Each accepted request uses one tok
 Requests increase a limited bucket while it drains at a fixed rate. Requests are rejected when the bucket is full.
 **Time:** O(1) per request  
 **Space:** O(1)
-> V2.0 uses a simplified bucket-occupancy model for Leaky Bucket.
+> this uses a simplified bucket-occupancy model for Leaky Bucket.
 ## Traffic Simulation
 Traffic is generated from configurable values rather than a hardcoded request list.
 ```text
@@ -142,7 +142,7 @@ Leaky Bucket         379        294        56.32
 ```
 Exact values depend on the generated traffic. The purpose is to observe behaviour under the same workload.
 ## Project Structure
-V2.0 is currently kept in one Java file:
+The project is currently kept in one Java file:
 ```text
 RateForge.java
 ├── RateLimiter
@@ -161,11 +161,11 @@ RateForge.java
 The project demonstrates interfaces, classes, enums, collections, encapsulation, polymorphism and exception handling.
 ## Performance
 RateForge measures how quickly the Java simulator processes generated request events.
-The metric is **Processing Events/sec**. It is not HTTP throughput because V2.0 does not send real network requests.
+The metric is **Processing Events/sec**. It is not HTTP throughput because this does not send real network requests.
 ## Error Handling
 The program validates input and handles invalid menu choices, numeric values, algorithms, traffic patterns, missing command-line values and CSV export errors.
 ## Limitations
-V2.0 is a simulation tool rather than a production API rate limiter.
+this is a simulation tool rather than a production API rate limiter.
 It does not include real HTTP requests, Redis/database storage, distributed limiting, authentication, a web dashboard or network benchmarking.
 ## Future Scope
 Possible future additions:
@@ -183,4 +183,4 @@ The goal of RateForge is to understand rate limiting by implementing the algorit
 It combines Java, data structures, algorithms and basic software engineering concepts into one practical project.
 ## Author
 Developed as a Java course project.
-**RateForge V2.0**
+**RateForge**
